@@ -1,0 +1,175 @@
+
+
+
+.logreg-body{
+    background-image: url('images/image.webp');
+    background-color: #c7e8e1;
+    height: 100%; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+input{
+    text-align:center;
+ }
+
+.login-icon{
+    width: 100px;
+    position: relative;
+    bottom: 40px;
+    margin-bottom: 0;
+}
+
+.lg-button{
+    border-radius: 10px;
+}
+
+.log-main-container{
+    background: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border-radius: 40px;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.reg-main-container{
+    background: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border-radius: 40px;
+    width: 300px;
+    height: 490px;
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* Control Panel */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(0 0 0/15%);
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 500px;
+    transform: translate(-50%,-50%);
+    transition: all .5s;
+    opacity: 1;
+}
+
+.reportCard{
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(0 0 0/15%);
+    padding: 1em;
+    position: absolute;
+    left: 50%;
+    top:5%;
+    text-align: center;
+    width: 500px;
+    transform: translate(-50%);
+    transition: all .5s;
+    opacity: 1;
+}
+
+.reportCard.hide{
+    top:-50%;
+    opacity: 0;
+
+}
+
+.reportTable{
+    margin-top: 600px;
+    transition: all .5s;
+
+}
+
+.reportTable.up{
+    margin-top: 0;
+
+}
+
+
+.addCard{
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: gray;
+    padding: 1em;
+    background-color: white;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    text-align: center;
+    width: 500px;
+    transform: translate(-50%,-50%);
+    transition: all .5s;
+    opacity: 0;
+}
+
+.addCard.open{
+    opacity: 1; 
+    top: 50%;
+    
+} 
+
+.add-event-img{
+    width: 100px;
+    margin-top: -50px;
+}
+
+.add-user-img{
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+}
+
+.package-img{
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+}
+
+.operation-btn{
+    text-decoration: none;
+
+}
+
+.tableContainer{
+    text-align: center;
+}
